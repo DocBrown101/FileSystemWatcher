@@ -9,11 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\..\..\Libaries\ViewModels\Observable.cs" Link="ViewModel\Observable.cs" />
-    <Compile Include="..\..\..\Libaries\ViewModels\RelayCommand.cs" Link="ViewModel\RelayCommand.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Jot" Version="2.1.7" />
     <PackageReference Include="Humanizer.Core" Version="2.8.26" />
     <PackageReference Include="WpfLocalizeExtension" Version="3.8.0" />
