@@ -2,7 +2,7 @@
 
 Helps detect changes to files and folders in nested folder structures.
 
-![Preview](https://github.com/DocBrown101/FileSystemWatcher/docs/FileSystemWatcher.gif)
+![Preview](https://github.com/DocBrown101/FileSystemWatcher/blob/main/docs/FileSystemWatcher.gif)
 
 ## Build
 
