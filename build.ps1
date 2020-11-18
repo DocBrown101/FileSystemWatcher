@@ -1,6 +1,8 @@
+$BuildPath = "$PSScriptRoot\build"
 $Version = "2020-11-1"
 $VersionDot = $Version -replace '-','.'
-$BuildPath = "$PSScriptRoot\build"
+$Project = "FileSystemWatcher"
+$Archive = "$BuildPath\File-System-Watcher-$Version-x64.zip"
 
 # Clean up
 if(Test-Path -Path $BuildPath)
@@ -9,7 +11,7 @@ if(Test-Path -Path $BuildPath)
 }
 
 # Dotnet restore and build
-dotnet publish "$PSScriptRoot\src\FileSystemWatcher\FileSystemWatcher.csproj" `
+dotnet publish "$PSScriptRoot\src\$Project\$Project.csproj" `
 	   --runtime win-x64 `
 	   --self-contained false `
 	   -c Release `
@@ -22,4 +24,4 @@ dotnet publish "$PSScriptRoot\src\FileSystemWatcher\FileSystemWatcher.csproj" `
 	   --nologo
 
 # Archiv Build
-Compress-Archive -Path "$BuildPath\FileSystemWatcher.exe" -DestinationPath "$BuildPath\$Version.zip"
+Compress-Archive -Path "$BuildPath\$Project.exe" -DestinationPath $Archive
