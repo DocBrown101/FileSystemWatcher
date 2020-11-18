@@ -1,4 +1,5 @@
 $Version = "2020-11-1"
+$VersionDot = $Version -replace '-','.'
 $BuildPath = "$PSScriptRoot\build"
 
 # Clean up
@@ -17,7 +18,8 @@ dotnet publish "$PSScriptRoot\src\FileSystemWatcher\FileSystemWatcher.csproj" `
 	   -p:PublishReadyToRun=true `
 	   -p:PublishSingleFile=true `
 	   -p:CopyOutputSymbolsToPublishDirectory=false `
+	   -p:Version=$VersionDot `
 	   --nologo
 
 # Archiv Build
-Compress-Archive -Path "$BuildPath\FileSystemWatcher.exe" -DestinationPath "$BuildPath\FileSystemWatcher-$($Version).zip"
+Compress-Archive -Path "$BuildPath\FileSystemWatcher.exe" -DestinationPath "$BuildPath\$Version.zip"
