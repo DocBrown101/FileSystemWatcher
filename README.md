@@ -1,6 +1,6 @@
 # File-System-Watcher
 
-Helps detect changes to files and folders in nested folder structures.
+Helps to detect changes to files and folders in nested folder structures - in real-time!
 
 ![Preview](https://github.com/DocBrown101/FileSystemWatcher/blob/main/docs/FileSystemWatcher.gif)
 
@@ -12,7 +12,7 @@ The following is required to compile:
   - Make sure you have the latest version installed
   - Make sure you have [SDK .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0) installed
 
-# PowerShell Build
+## PowerShell Build
 
 __Requirements__
 - [SDK .NET 5.0](https://dotnet.microsoft.com/download/dotnet/5.0)
