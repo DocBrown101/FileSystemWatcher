@@ -1,5 +1,5 @@
 $BuildPath = "$PSScriptRoot\build"
-$Version = "2020-11-1"
+$Version = Get-Date -Format "yyyy-MM-dd" # 2020-11-1
 $VersionDot = $Version -replace '-','.'
 $Project = "FileSystemWatcher"
 $Archive = "$BuildPath\File-System-Watcher-$Version-x64.zip"
